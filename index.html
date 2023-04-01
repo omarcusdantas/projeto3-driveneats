@@ -94,7 +94,7 @@
         </button>
     </footer> 
     <div class="confirm-order hidden">
-        <div class="confirm-box">
+        <div class="confirm-box" data-test="confirm-order-modal">
             <div class="confirm-title">
                 <p>Confirme seu pedido</p></div>
             <div class="confirm-main">
@@ -113,10 +113,10 @@
                 <h3>TOTAL</h3>
                 <p></p>
             </div>
-            <button class="confirm-button" onclick="checkOut()">
+            <button class="confirm-button" onclick="checkOut()" data-test="confirm-order-btn">
                 Tudo certo, pode pedir!
             </button>
-            <button class="cancel-button" onclick="cancelOrder()">
+            <button class="cancel-button" onclick="cancelOrder()" data-test="cancel-order-btn">
                 Cancelar
             </button>
         </div>
