@@ -45,6 +45,10 @@ h6 {
     line-height: 18px;
 }
 
+img {
+    width: 144px;
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -58,8 +62,7 @@ header {
 }
 
 .header-container {
-    padding-top: 15px;
-    padding-left: 21px;
+    padding: 15px 0 0 21px;
     width: 414px;
 }
 
@@ -69,9 +72,7 @@ main {
 }
 
 .main-container {
-    padding-top: 33px;
-    padding-left: 21px;
-    padding-bottom: 1px;
+    padding: 33px 0 1px 21px;
     margin: 0 auto;
     width: 414px;
     border-left: 2px solid #d2d2d2;
@@ -79,8 +80,7 @@ main {
 }
 
 .food-row {
-    margin-top: 17px;
-    margin-bottom: 27px;
+    margin: 17px 0 27px 0;
     display: flex;
     overflow-x: scroll;
     gap: 16px;
