@@ -64,13 +64,19 @@ function selectDessert(selected){
 }
 
 function checkOut() {
+    const name = prompt('Nome');
+    const address = prompt('Endereço');
+
     let total = parseFloat(priceMain) + parseFloat(priceDrink) + parseFloat(priceDessert);
     total = total.toFixed(2).replace('.', ',');
+
     const message = 
         `Olá, gostaria de fazer o pedido:%0A` +
         `- Prato: ${nameMain}%0A` +
         `- Bebida: ${nameDrink}%0A` +
         `- Sobremesa: ${nameDessert}%0A` +
-        `Total: R$ ${total}`;
+        `Total: R$ ${total}%0A%0A` +
+        `Nome: ${name}%0A` +
+        `Endereço: ${address}`;
     window.open(`https://wa.me/+5561999999999?text=${message}`);
 }

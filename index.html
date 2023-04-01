@@ -15,7 +15,7 @@
              <h3>Sua comida em 6 minutos</h3>
         </div>
     </header>  
-    <main>
+    <main> 
         <div class="main-container">
             <div class="food-container">
                 <h2>Primeiro, seu prato</h2>
@@ -90,9 +90,37 @@
     </main>
     <footer>
         <button class="close-order" disabled onclick="checkOut()" data-test="order-btn">
-            Selecione os 3 itens<br>para fechar o pedido
+            Selecione os 3 itens<br> para fechar o pedido
         </button>
-    </footer>  
+    </footer> 
+    <div class="confirm-order hidden">
+        <div class="confirm-box">
+            <div class="confirm-title">
+                <p>Confirme seu pedido</p></div>
+            <div class="confirm-main">
+                <h3>Frango Yin Yang</h3>
+                <p>14,90</p>
+            </div>
+            <div class="confirm-drink">
+                <h3>Frango Yin Yang</h3>
+                <p>14,90</p>
+            </div>
+            <div class="confirm-dessert">
+                <h3>Frango Yin Yang</h3>
+                <p>14,90</p>
+            </div>
+            <div class="confirm-total">
+                <h3>Frango Yin Yang</h3>
+                <p>14,90</p>
+            </div>
+            <button class="confirm-button">
+                Tudo certo, pode pedir!
+            </button>
+            <button class="cancel-button">
+                Cancelar
+            </button>
+        </div>
+    </div> 
     <script src="./src/script.js"></script>
 </body>
 </html>
