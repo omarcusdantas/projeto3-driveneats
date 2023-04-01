@@ -209,3 +209,9 @@ footer {
 .hidden {
     display: none;
 }
+
+@media (max-width: 413px) {
+    .header-container, .main-container {
+        width: 100%;
+    }
+}
