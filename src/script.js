@@ -63,6 +63,35 @@ function selectDessert(selected){
     checkOrder();
 }
 
+function confirmOrder() {
+    const foodMain = document.querySelector('.confirm-main');
+    const foodDrink = document.querySelector('.confirm-drink');
+    const foodDessert = document.querySelector('.confirm-dessert');
+    const foodTotal = document.querySelector('.confirm-total');
+
+    foodMain.querySelector('h3').innerHTML = nameMain;
+    foodDrink.querySelector('h3').innerHTML = nameDrink;
+    foodDessert.querySelector('h3').innerHTML = nameDessert;
+
+    foodMain.querySelector('p').innerHTML = priceMain.replace('.', ',');
+    foodDrink.querySelector('p').innerHTML = priceDrink.replace('.', ',');
+    foodDessert.querySelector('p').innerHTML = priceDessert.replace('.', ',');
+
+    let total = parseFloat(priceMain) + parseFloat(priceDrink) + parseFloat(priceDessert);
+    total = total.toFixed(2).replace('.', ',');
+    foodTotal.querySelector('p').innerHTML = `R$ ${total}`;
+
+    const confirmBox = document.querySelector('.confirm-order');
+    console.log(confirmBox);
+    confirmBox.classList.remove('hidden');
+}
+
+function cancelOrder() {
+    const confirmBox = document.querySelector('.confirm-order');
+    console.log(confirmBox);
+    confirmBox.classList.add('hidden');
+}
+
 function checkOut() {
     const name = prompt('Nome');
     const address = prompt('Endereço');

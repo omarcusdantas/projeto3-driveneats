@@ -89,7 +89,7 @@
         </div>
     </main>
     <footer>
-        <button class="close-order" disabled onclick="checkOut()" data-test="order-btn">
+        <button class="close-order" disabled onclick="confirmOrder()" data-test="order-btn">
             Selecione os 3 itens<br> para fechar o pedido
         </button>
     </footer> 
@@ -98,25 +98,25 @@
             <div class="confirm-title">
                 <p>Confirme seu pedido</p></div>
             <div class="confirm-main">
-                <h3>Frango Yin Yang</h3>
-                <p>14,90</p>
+                <h3></h3>
+                <p></p>
             </div>
             <div class="confirm-drink">
-                <h3>Frango Yin Yang</h3>
-                <p>14,90</p>
+                <h3></h3>
+                <p></p>
             </div>
             <div class="confirm-dessert">
-                <h3>Frango Yin Yang</h3>
-                <p>14,90</p>
+                <h3></h3>
+                <p></p>
             </div>
             <div class="confirm-total">
-                <h3>Frango Yin Yang</h3>
-                <p>14,90</p>
+                <h3>TOTAL</h3>
+                <p></p>
             </div>
-            <button class="confirm-button">
+            <button class="confirm-button" onclick="checkOut()">
                 Tudo certo, pode pedir!
             </button>
-            <button class="cancel-button">
+            <button class="cancel-button" onclick="cancelOrder()">
                 Cancelar
             </button>
         </div>

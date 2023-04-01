@@ -178,6 +178,10 @@ footer {
     margin-bottom: 18px;
 }
 
+.confirm-total h3, .confirm-total p {
+    font-weight: 700;
+}
+
 .confirm-button {
     width: 329px;
     height: 52px;
@@ -188,6 +192,7 @@ footer {
     border: none;
     border-radius: 100px;
     margin-top: 6px;
+    cursor: pointer;
 }
 
 .cancel-button {
@@ -198,6 +203,7 @@ footer {
     font-size: 22px;
     font-weight: 700;
     border: none;
+    cursor: pointer;
 }
 
 .hidden {
